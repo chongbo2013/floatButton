@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/btn_hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_show"
+        android:layout_alignBottom="@+id/btn_show"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="26dp"
+        android:text="隐藏" />
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/btn_hide"
+        android:text="打开" />
+
+    <com.example.floatbutton.Floatingbutton
+        android:id="@+id/button_floating_action"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+    android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:background="@drawable/guide01_selector" />
+
+</RelativeLayout>
